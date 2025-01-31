@@ -9,12 +9,14 @@ public class Main {
 
         Scanner keyboard = new Scanner(System.in);
         Student javaStudent1= new Student();
-        javaStudent1.name="Liz";
-        javaStudent1.course="Java";
+        javaStudent1.setName("Liz"); //assigning a value
+        javaStudent1.setCourse("Java");
 
         Student webStudent1=new Student("Ann", "web");
-        System.out.println(webStudent1.name);
-        System.out.println(javaStudent1.name);
+        System.out.println(webStudent1.getName() + " " + webStudent1.getCourse()); //reading a value from an object
+
+        OrdinaryStudent pythonStudent = new OrdinaryStudent("Peter", "Python");
+        pythonStudent.toString();
 
     }
 }
